@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
 	var num1 int8 = 127 //int8 range -127 to 127
@@ -21,8 +24,19 @@ func main() {
 	fmt.Println(num4)
 
 	var nonnegativenum uint = 2147483648 //no negative numbers
-	fmt.Print(nonnegativenum)
+	fmt.Println(nonnegativenum)
 
 	var float float32 = 39999999999999999999999999999999999999.10 //RTX 4090 price
-	fmt.Print(float)
+	fmt.Println(float)
+
+	//float64 also exists
+
+	var isAdmin bool = true
+	fmt.Println(isAdmin)
+
+	var err error
+	fmt.Println(err)
+
+	var erro error = errors.New("Intenal error")
+	fmt.Println(erro)
 }
