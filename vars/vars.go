@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(firstname = string) {
+func main() {
 	var firstname string = "José"
 	fmt.Println(firstname)
 
@@ -20,4 +20,7 @@ func main(firstname = string) {
 
 	firstname = "first name mod"
 	println(firstname)
+
+	firstname, lastname1 = lastname1, firstname
+	fmt.Println(firstname, lastname1)
 }
